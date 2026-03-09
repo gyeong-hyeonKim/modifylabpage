@@ -34,7 +34,7 @@ function createHeader() {
 
   header.innerHTML = `
     <div class="container nav-wrap">
-      <div class="site-logo">${siteTitle}</div>
+      <a href="index.html" class="site-logo">${siteTitle}</a>
       <nav class="main-nav">
         ${navHtml}
       </nav>
@@ -81,4 +81,5 @@ function revealOnScroll() {
 }
 
 window.addEventListener("scroll", revealOnScroll);
+
 window.addEventListener("load", revealOnScroll);
